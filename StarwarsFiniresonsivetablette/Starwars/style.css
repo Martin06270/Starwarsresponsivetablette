@@ -1,0 +1,313 @@
+
+
+/*partie header*/
+
+a, a:link, a:visited  {
+    color:#fff;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+header {
+    display:flex;
+    padding: 0 100px;
+    margin-top: -10px;
+   
+    
+}
+
+#casque{
+    width: 30%;
+    margin-top: 10px;
+}
+
+.navbar {
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    
+    
+}
+.sousliste {
+    padding:0;
+}
+.titleLi a{
+    font-size: 2em;
+    
+}
+.titleLi {
+    margin-bottom: 30px;
+    font-family: vt323;
+    font-size:20px ;
+}
+
+
+#logo {
+    margin-right: 50%;
+     }
+#rblsvsemp {
+    color:white;
+    font-family: VT323;
+    font-size: 30px;
+    margin:0;
+}
+
+/*fin de la header*/
+
+/*partie personnages*/
+
+#personnages {
+display: flex;
+justify-content: space-around;
+border-color: white;   
+margin-bottom: 15px;
+margin-top: 15px;
+background-image: url(assets/images/WallpaperDog.jpg);
+background-attachment: fixed;
+background-position: center;
+}
+
+#perso1, #perso2, #perso3, #perso4 {
+    width:15%;
+}
+#personnages img{
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 15%;
+}
+/*fin de la partie personnages*/
+/*partie texte ipsum*/
+
+#texipsum {
+    color: white;
+ font-size: 40px;    
+text-align: center;   
+}
+
+#parttext {
+    background-image: url(assets/images/fancy-pants.jpg);
+    padding: 40px;
+}
+
+
+/*partie grid*/
+
+.wraper{
+    display:grid;
+    grid-template-areas:
+    'a b c c'
+    'a d c c';
+
+  margin:1px;
+  border:1px;
+  border-color: black;
+  background-color: white;
+
+  gap: 7px;
+ 
+  padding: 1px;
+
+}
+
+/*grid case a item1*/
+
+.item1 { grid-area: a;
+    
+}
+.item1 h1{
+    color:orange;
+}
+.item1 p{
+    color: gray;
+}
+
+.item1 img {
+    width:200px
+}
+ .item1>p>a {color:blue; }
+ .item1>p>a:link{text-decoration:underline;}
+
+ /*grid case b item2*/
+
+ .item2 { grid-area: b;
+    
+ }
+ .item2 h1{
+     color:orange;
+ }
+
+.item2 p{
+    color: gray;
+}
+
+/*grid case d item3*/
+
+.item3 { grid-area: d;
+    
+}
+.item3 h1{
+    color:orange;
+}
+
+.item3 p{
+    color: gray;
+}
+
+/*grid case C item4*/
+
+.item4 { grid-area: c;
+    
+}
+.item4 h1{
+    color:orange;
+}
+
+.item4 p{
+    color: gray;
+}
+
+
+
+/*footer*/
+
+
+.footer1 {
+ background-image: url(assets/images/WallpaperDog.jpg);
+background-position: center;
+display: flex;
+justify-content: space-around;
+color: #fff;
+}
+
+#carte {
+    width: 250px;
+    height: 150px;
+}
+
+#form {
+    display: flex;
+   
+ flex-direction: column;
+}
+
+.widgets{
+    margin: 0;
+}
+
+
+/*Début du responsive format tablette*/
+
+@media screen and (min-width :480px) and (max-width :768px) {
+
+
+    .navbar{
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: 1fr ;
+    justify-content: left;
+    width: 5%;
+    }
+
+    #personnages{
+        display: grid;
+        grid-template-columns:
+        'a b'
+        'c d'
+        ;
+    }
+
+    #perso1{
+        grid-area: a;
+        width: 40%;
+    }
+    #perso2{
+        grid-area: b;
+        width: 40%;
+        margin-left: 55%;
+    }
+    #perso3{
+        grid-area: c;
+        width: 40%;
+        margin-top: 70%;
+    }
+    #perso4{
+        grid-area: d;
+        width: 40%;
+        margin-top: 70%;
+        margin-left: 55%;
+    }
+
+    #parttext p{
+        font-size: 25px;
+    }
+
+
+
+
+    .wraper{
+        display:grid;
+        grid-template-areas:
+        'a b'
+        'a d'
+        'c c ';
+    
+      margin:1px;
+      border:1px;
+      border-color: black;
+      background-color: white;
+    
+      gap: 0px;
+     
+      padding: 1px;
+    
+    }
+    .item1 h1{
+        font-size: 25px;
+    }
+    .item1 p{
+        font-size: 13px;
+    }
+    
+
+    .item2 h1{
+        font-size: 25px;
+        ;
+    }
+    .item2 p{
+        font-size: 13px;
+    }
+
+    .item3 h1{
+        font-size: 25px;
+    }
+    .item3 p{
+        font-size: 13px;
+    }
+    .item4 h1{
+        font-size: 25px;
+    }
+    .item4 p{
+        font-size: 13px;
+    }
+    .item4 iframe{
+        width: 460px;
+    }
+
+    .footer1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+   
+
+    /*Fin du responsive format tablette*/
+
+    /*Début du responsive format télèphone*/
+
+   
+
+}
